@@ -1,0 +1,144 @@
+.section {
+    &__hero {
+        padding-bottom: 86px;
+        position: relative;
+        @media (max-width: $md2) {
+            padding-bottom: 400px;
+        }
+        @media (max-width: $md3) {
+            padding-bottom: 450px;
+        }
+        .header__img {
+            position: absolute;
+            right: 0;
+            top: 0;
+            max-width: 880px;
+            width: 100%;
+            z-index: -1;
+            @media (max-width: $md1) {
+                max-width: 600px;
+            }
+            @media (max-width: $md2) {
+                top: unset;
+                bottom: 0;
+            }
+            @media (max-width: $md3) {
+                bottom: 100px;
+            }
+        }
+    }
+}
+
+.hero {
+    &__item {
+        color:$secondaryLight;
+    }
+    &__title {
+        padding-top: 100px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 62px;
+        color: $primary;
+        max-width: 387px;
+        @media (max-width: $md1) {
+            padding-top: 75px;
+        }
+        @media (max-width: $md2) {
+            padding-top: 50px;
+            font-size: 36px;
+            line-height: 120%;
+            max-width: 100%;
+        }
+        @media (max-width: $md3) {
+            font-size: 28px;
+        }
+    }
+    &__subtitle {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        color: $secondary;
+        margin-top: 15px;
+        max-width: 500px;
+        @media (max-width: $md2) {
+            max-width: 100%;
+        }
+    }
+    &__buttons {
+        margin-top: 30px;
+        @media (max-width: $md3) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__btn {
+        @media (max-width: $md3) {
+            justify-content: center;
+        }
+    }
+    &__stats-title {
+        margin-top: 130px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $secondaryLight;
+        @media (max-width: $md1) {
+            margin-top: 75px;
+        }
+        @media (max-width: $md2) {
+            margin-top: 50px;
+            line-height: 120%;
+        }
+    }
+    &__stats {
+        display: flex;
+        gap: 80px;
+        @media (max-width: $md2) {
+            gap: 50px;
+        }
+        @media (max-width: $md3) {
+            gap: 15px;
+        }
+    }
+    &__stats-item {
+        
+    }
+    &__stats-item--num {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 36px;
+        color: $primary;
+        margin-top: 35px;
+        @media (max-width: $md2) {
+            font-size: 24px;
+            line-height: 100%;
+        }
+        @media (max-width: $md3) {
+            font-size: 22px;
+        }
+    }
+
+    &__stats-item--text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: uppercase;
+        margin-top: 12px;
+        color: $secondary;
+        @media (max-width: $md3) {
+            margin-top: 5px;
+            font-size: 12px;
+            @media (max-width: $md3) {
+                margin-top: 5px;
+                font-size: 12px;
+            }
+        }
+    }
+}

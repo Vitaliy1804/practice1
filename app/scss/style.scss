@@ -1,0 +1,134 @@
+// ************************ SCSS ************************ //
+
+@import "./vars"; 
+@import "./fonts";
+@import "./navbar";
+@import "./special";
+@import "./hero";
+@import "./trusted";
+@import "./support";
+@import "./footer";
+
+
+
+
+
+@media (max-width: 768px) {}
+
+// ************************ Defaul styles ************************ //
+* {
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: $mw + px;
+	margin: 0 auto;
+	width: 100%;
+	@media (max-width: $md1) {
+		max-width: 970px;
+	}
+	@media (max-width: $md2) {
+		max-width: 750px;
+	}
+	@media (max-width: $md3) {
+		max-width: none;
+		padding: 0 10px;
+	}
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul, li {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Metropolis';
+	&.locked {
+		overflow: hidden;
+	}
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.btn {
+	background: #2962ef;
+	border-radius: 4px;
+	color: aliceblue;
+	padding: 11px 24px;
+	display: inline-flex;
+	gap:7px;
+	
+	
+	&:hover {
+		background: #071f5c;
+		transition: 0.3s all ease;
+		svg {
+			transform: translate(5px, -5px);
+			transition: 0.3s all ease;
+		}
+	}
+}
+
+.btn__outline {
+    border-radius: 4px;
+	color: $neutral;
+	padding: 11px 24px;
+	display: inline-flex;
+	transition: 0.3s all ease;
+	&:hover {
+		color:#6849da;
+		transition: 0.3s all ease;
+	}
+}
+
+.section__title {
+	font-style: normal;
+	font-weight: bold;
+	line-height: 44px;
+	font-size: 36px;
+	color: $primary;
+	@media (max-width: $md2) {
+        font-size: 32px;
+		line-height: 120%;
+    }
+	@media (max-width: $md2) {
+		font-size: 26px;
+	}
+}
+
+.section__subtitle {
+	font-style: normal;
+	font-weight: bold;
+	line-height: 14px;
+	font-size: 26px;
+	color: $secondary;
+	margin-top: 15px;
+	@media (max-width: $md2) {
+		margin-top: 10px;
+		font-size: 22px;
+	}
+	@media (max-width: $md3) {
+		margin-top: 10px;
+		font-size: 16px;
+	}
+}
+
